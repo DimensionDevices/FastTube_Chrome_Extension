@@ -1,7 +1,10 @@
 
 # FastTube
 
-A lightweight Chrome extension that speeds up YouTube by stripping heavy CSS effects, blocking telemetry, and prefetching playlist data.
+**WARNING**
+This will not work in Chrome. Google have locked down Extension support because they are authoritarian and awful. Use Brave or Firefox.
+
+A lightweight browser extension that speeds up YouTube by stripping heavy CSS effects, blocking telemetry, and prefetching playlist data.
 
 ## Features
 
@@ -18,7 +21,7 @@ A lightweight Chrome extension that speeds up YouTube by stripping heavy CSS eff
 ### From Source (Developer Mode)
 
 1. Clone or download this repository.
-2. Open `chrome://extensions/` in Chrome.
+2. Open `brave://extensions/` in Brave.
 3. Enable **Developer mode** (top-right toggle).
 4. Click **Load unpacked** and select the extension folder.
 5. Navigate to YouTube - the extension activates automatically.
@@ -91,7 +94,7 @@ No remote code is loaded. No data leaves your browser. The extension does not re
 
 ## Development
 
-No build step is required. Edit the source files and reload the extension from `chrome://extensions/`.
+No build step is required. Edit the source files and reload the extension from `Brave://extensions/`.
 
 To debug:
 - Content scripts run in the `MAIN` world, so logs appear in the page console (F12 on YouTube), not the extension's service worker console.
@@ -99,7 +102,7 @@ To debug:
 
 ## Compatibility
 
-- Chrome / Edge / Brave / other Chromium-based browsers supporting **Manifest V3**.
+- Brave / Edge / Brave / other Chromium-based browsers supporting **Manifest V3**.
 - Firefox support is not currently provided (MV3 `declarativeNetRequest` static rules and `world: "MAIN"` content scripts have differing support).
 
 ## License
